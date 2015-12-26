@@ -110,7 +110,7 @@
             <table class="gridtable" style="width:100%;">
                 <thead>
                 <tr>
-                    <th colspan="4">查询结果 - [<a href="${pageContext.request.contextPath}/view">新增国家(地区)</a>]</th>
+                    <th colspan="4">查询结果 - [<a href="${pageContext.request.contextPath}/view.html">新增国家(地区)</a>]</th>
                 </tr>
                 <tr>
                     <th>ID</th>
@@ -126,8 +126,8 @@
                         <td>${country.countryname}</td>
                         <td>${country.countrycode}</td>
                         <td style="text-align:center;">[<a
-                                href="${pageContext.request.contextPath}/view?id=${country.id}">修改</a>] -
-                            [<a href="${pageContext.request.contextPath}/delete?id=${country.id}">删除</a>]
+                                href="${pageContext.request.contextPath}/view.html?id=${country.id}">修改</a>] -
+                            [<a href="${pageContext.request.contextPath}/delete.html?id=${country.id}">删除</a>]
                         </td>
                     </tr>
                 </c:forEach>
@@ -137,7 +137,7 @@
                 <tr>
                     <c:if test="${pageInfo.hasPreviousPage}">
                         <td>
-                            <a href="${pageContext.request.contextPath}/list?page=${pageInfo.prePage}&rows=${pageInfo.pageSize}&countryname=${queryParam.countryname}&countrycode=${queryParam.countrycode}">前一页</a>
+                            <a href="${pageContext.request.contextPath}/list.html?page=${pageInfo.prePage}&rows=${pageInfo.pageSize}&countryname=${queryParam.countryname}&countrycode=${queryParam.countrycode}">前一页</a>
                         </td>
                     </c:if>
                     <c:forEach items="${pageInfo.navigatepageNums}" var="nav">
@@ -146,13 +146,13 @@
                         </c:if>
                         <c:if test="${nav != pageInfo.pageNum}">
                             <td>
-                                <a href="${pageContext.request.contextPath}/list?page=${nav}&rows=${pageInfo.pageSize}&countryname=${queryParam.countryname}&countrycode=${queryParam.countrycode}">${nav}</a>
+                                <a href="${pageContext.request.contextPath}/list.html?page=${nav}&rows=${pageInfo.pageSize}&countryname=${queryParam.countryname}&countrycode=${queryParam.countrycode}">${nav}</a>
                             </td>
                         </c:if>
                     </c:forEach>
                     <c:if test="${pageInfo.hasNextPage}">
                         <td>
-                            <a href="${pageContext.request.contextPath}/list?page=${pageInfo.nextPage}&rows=${pageInfo.pageSize}&countryname=${queryParam.countryname}&countrycode=${queryParam.countrycode}">下一页</a>
+                            <a href="${pageContext.request.contextPath}/list.html?page=${pageInfo.nextPage}&rows=${pageInfo.pageSize}&countryname=${queryParam.countryname}&countrycode=${queryParam.countrycode}">下一页</a>
                         </td>
                     </c:if>
                 </tr>
