@@ -50,7 +50,7 @@ public class CountryController {
      * @param queryModel
      * @return
      */
-    @RequestMapping(value = "pageInfo", produces = "application/json")
+    @RequestMapping(value = "pageInfo")
     public ModelAndView pageInfo(CountryQueryModel queryModel) {
         ModelAndView result = new ModelAndView();
         PageInfo<Country> pageInfo = countryService.selectByCountryQueryModel(queryModel);

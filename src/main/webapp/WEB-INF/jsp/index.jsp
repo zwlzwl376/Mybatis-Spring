@@ -28,7 +28,7 @@
     <div class="middle">
         <h1 style="padding: 50px 0 20px;">国家(地区)列表</h1>
 
-        <form action="${pageContext.request.contextPath}/list" method="post">
+        <form action="${pageContext.request.contextPath}/list.html" method="post">
             <table class="gridtable" style="width:100%;">
                 <tr>
                     <th>国家(地区)名称：</th>
