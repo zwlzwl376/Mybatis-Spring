@@ -20,7 +20,7 @@
         <targetResourcesProject>${basedir}/src/main/resources</targetResourcesProject>
         <targetXMLPackage>mapper</targetXMLPackage>
         <!--  编译jdk版本  -->
-        <jdk.version>1.6</jdk.version>
+        <jdk.version>1.8</jdk.version>
         <!--  依赖版本  -->
         <mybatis.version>3.3.0</mybatis.version>
         <mapper.version>3.3.0</mapper.version>
